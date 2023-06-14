@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  crud-prisma:
+    image: bitnami/postgresql
+    ports: 
+      - 3303:5432
+    environment:
+      - POSTGRESQL_USERNAME=form
+      - POSTGRESQL_PASSWORD=password
+      - POSTGRESQL_DATABASE=crudprisma
